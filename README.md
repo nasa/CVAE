@@ -8,4 +8,8 @@ In the folder *examples* we provide a jupyer notebook, explaining a detailed imp
 python source/CVAE.py -l 32 -n 10 -s 5
 ```
 
+# Reference
+
+In the case of any use of the software, please refer the following paper as the original paper that introduces CVAE for anomaly detection in flight operational data. 
+
 [1] Memarzadeh, M., Matthews, B., and Avrekh, I. (2020). Unsupervised Anomaly Detection in Flight Data Using Convolutional Variational Auto-Encoder. *Aerospace*, 7(8), 115, https://doi.org/10.3390/aerospace7080115.
