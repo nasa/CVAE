@@ -76,7 +76,7 @@ Loading the data
 ## 3- data format should be in #_instances * window_size * num_param
 
 logger.info("loading the data...")
-full_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly.npz")
+full_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly_github.npz")
 x_train = full_data['train_data']
 x_valid = full_data['valid_data']
 x_test = full_data['test_data']
