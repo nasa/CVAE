@@ -76,10 +76,12 @@ Loading the data
 ## 3- data format should be in #_instances * window_size * num_param
 
 logger.info("loading the data...")
-full_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly_github.npz")
-x_train = full_data['train_data']
-x_valid = full_data['valid_data']
-x_test = full_data['test_data']
+train_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly_train.npz")
+valid_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly_valid.npz")
+test_data = np.load(dir_2_data+"DASHlink_binary_Flaps_noAnomaly_test.npz")
+x_train = train_data['data']
+x_valid = valid_data['data']
+x_test = test_data['data']
 
 model_name = ("CVAE_l_"+(str(latent_dim))+"_beta_"+(str(beta))+
               "_batch_"+str(batch_size)+"_metric_"+metric)
